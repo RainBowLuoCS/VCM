@@ -46,17 +46,6 @@ Refer to the [LLaVA Documentation](https://github.com/haotian-liu/LLaVA?tab=read
 
 We utilize the [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) toolkit for comprehensive benchmarking. 
 
-To evaluate a VCM-enhanced model:
-1.  Install `lmms-eval`:
-    ```bash
-    git clone https://github.com/EvolvingLMMs-Lab/lmms-eval.git
-    cd lmms-eval
-    pip install -e .
-    ```
-2.  Run evaluation on benchmarks (e.g., MME, MMMU, SEED-Bench):
-    ```bash
-    python3 -m lmms_eval --model llava --model_args pretrained="path/to/your/vcm/checkpoint" --tasks mme,mmmu --batch_size 1 --log_samples --output_path ./logs/
-    ```
 
 ---
 
